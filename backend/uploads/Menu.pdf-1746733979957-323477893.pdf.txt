@@ -1,0 +1,50 @@
+
+
+CategoryItemPrice
+Loaded FriesTake My Money800
+Loaded FriesHot Comeback800
+Loaded FriesCrunch Attack800
+Loaded FriesKnock Me Out800
+Loaded FriesBuffalo Blaze800
+Loaded FriesLip Smacker800
+Pizza FriesPizza Fries850
+Add-onCheese150
+Add-onChicken180
+Add-onOlive60
+Add-onJalapeno60
+Loaded WingsBBQ Wings690
+Loaded WingsHot Wings590
+Loaded WingsBuffalo Wings690
+Share BucketFries Feast650
+Share BucketWings Party1350
+Share BucketUltimate Munch760
+Awesome Fries - Straight CutJumbo Straight Cut590
+Awesome Fries - Straight CutLarge Straight Cut460
+Awesome Fries - Straight CutSmall Straight Cut290
+Awesome Fries - CurlyJumbo Curly660
+Awesome Fries - CurlyLarge Curly490
+Awesome Fries - CurlySmall Curly360
+Awesome Fries - SeasonedJumbo Seasoned620
+Awesome Fries - SeasonedLarge Seasoned490
+
+Awesome Fries - SeasonedSmall Seasoned320
+SauceGarlic Melt90
+SauceSweet Kick90
+SauceBBQ Buzz90
+SauceThe Nuke90
+SauceCome Back90
+SauceBuffa Lo-ve90
+BurgerPotato Punch290
+BurgerCrunchy Cluck620
+BurgerFiery Cluck680
+BurgerJaw Locker850
+BurgerThunder Cluck730
+Burger Add-onJalapeno Slices60
+Burger Add-onCheese Slice70
+Burger Add-onPotato Patty120
+Burger Add-onZinger Patty220
+WrapLegend Wrap760
+WrapFirecracker Wrap760
+SnackPotato Cheese Poppers450
+BeverageCold Drink (500ml)100
+BeverageWater (500ml)70

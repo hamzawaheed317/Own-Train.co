@@ -1,0 +1,52 @@
+
+
+Big Data Analysis for Project Entities Based on User
+-- Analyze average expenses, salary, and budget per user --
+WITH user_expenses AS (
+    SELECT 
+        u.u_id,
+        u.username,
+        SUM(e.expense_amount) AS total_expenses
+    FROM 
+        user u
+    LEFT JOIN 
+        expense e ON u.u_id = e.u_id
+    GROUP BY 
+        u.u_id, u.username
+),
+user_salary AS (
+    SELECT 
+        u.u_id,
+        SUM(s.salary) AS total_salary
+    FROM 
+        user u
+    LEFT JOIN 
+        salary s ON u.u_id = s.u_id
+    GROUP BY 
+        u.u_id
+),
+user_budget AS (
+    SELECT 
+        u.u_id,
+
+        b.budget_amount
+    FROM 
+        user u
+    LEFT JOIN 
+        budget b ON u.u_id = b.u_id
+)
+SELECT 
+    u.username,
+    COALESCE(us.total_salary, 0) AS total_salary,
+    COALESCE(ue.total_expenses, 0) AS total_expenses,
+    COALESCE(ub.budget_amount, 0) - COALESCE(ue.total_expenses, 0) AS remaining_budget,
+    (COALESCE(ue.total_expenses, 0) / NULLIF(COALESCE(ub.budget_amount, 0), 0)) * 100 AS 
+expense_percentage
+FROM 
+    user u
+LEFT JOIN 
+    user_expenses ue ON u.u_id = ue.u_id
+LEFT JOIN 
+    user_salary us ON u.u_id = us.u_id
+LEFT JOIN 
+    user_budget ub ON u.u_id = ub.u_id;

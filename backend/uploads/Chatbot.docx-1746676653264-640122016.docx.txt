@@ -1,0 +1,62 @@
+Search Chatbot (.Net Core MVC Controller)
+
+We are looking to build a search “chatbot” (using ChatGPT API in English language only) that can gather enough information from a customer to be able to perform a travel search (see travel types section below for the data needed to perform a search) based on free-text input. If only partial information is obtained from the customer, it will keep responding in an appropriate manner until it has all the information it needs to perform a search.
+
+We have the basic implementation, but need someone to quote for completing this task (see example URL below) using .Net Core MVC controller, ChatGPT API (either one of 4, 4o, or 4o-mini models, the newer models are preferred).
+
+You will see we have implemented a session “memory” so that it can keep asking questions until it has all the information it needs.
+
+The customer should be able to send in enquiries such as “I want to go somewhere hot in March” and it provide example suggestions on locations to go, once it has a location then ask for any other missing information it needs.
+
+Example can be seen here:https://files.travelify.io/chatbotui.html
+
+Example Files download (both the example HTML/JS for the above example and the .Net Core MVC controller/model files):https://files.travelify.io/chatbot.zip
+
+We have the following types of searches that a customer can perform: Accommodation, Flights, Holidays (Flight+Hotel)
+
+You can see our standard search box for each type of search on: https://www.traveldemo.site/
+
+The requirements they need to meet:
+
+Accommodation:
+
+Location (name, latitude & longitude)
+
+Check-in date
+
+Check-out date or duration/nights
+
+Number of travellers: split into adults, children (with age), infants
+
+Optional properties: Star rating (1-5 star), board basis (e.g. Half Board)
+
+Flights:
+
+Origin/departure airport (name, 3-letter IATA code, e.g. LON)
+
+Destination airport (name, 3-letter IATA code, e.g. AGP)
+
+Departure date
+
+Return date/duration
+
+Number of travellers: split into adults, children (with age), infants
+
+Optional properties: Return/One-Way, Cabin Class (e.g. Economy/First/Business), Direct Flight
+
+
+
+Holidays (Flight+Hotel)
+
+Origin/departure airport (name, 3-letter IATA code, e.g. LON)
+
+Destination Location (name, either 3-letter IATA code or latitude & longitude)
+
+Check-in date
+
+Check-out date or duration/nights
+
+Number of travellers: split into adults, children (with age), infants
+
+Optional properties: Star rating (1-5 star), board basis (e.g. Half Board), Cabin Class (e.g. Economy/First/Business
+
